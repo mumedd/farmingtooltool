@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "farmingtooltool",
+	"version": "${version}",
+	"name": "FarmingToolTool",
+	"description": "Provides quality of life features for farming tools such as instantly breaking cacti and warning if you are using the wrong farming tool.",
+	"authors": [
+		"vUSB"
+	],
+	"contact": {
+		"homepage": "https://github.com/mumedd/",
+		"sources": "https://github.com/mumedd/farmingtooltool",
+		"issues": "https://github.com/mumedd/farmingtooltool/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/farmingtooltool/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.github.mumedd.farmingtooltool.FarmingToolTool"
+		],
+		"modmenu": [
+			"com.github.mumedd.farmingtooltool.config.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"farmingtooltool.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"update_checker": true
+		}
+	}
+}
